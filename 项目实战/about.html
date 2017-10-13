@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>项目实战</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a  href="" class="navbar-brand logo"><img src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="glyphicon glyphicon-list"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li>
+                    <li><a href="information.html"><span class="glyphicon glyphicon-list"></span>&nbsp;资讯</a></li>
+                    <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span>&nbsp;案列</a></li>
+                    <li class="active"><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="hgroup">
+                <h2>关于</h2>
+                <h4>成长介绍 ……</h4>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 hidden-sm hidden-xs">
+                    <div class="list-group">
+                        <a class="list-group-item" href="#1">1.机构介绍</a>
+                        <a class="list-group-item" href="#2">2.加入我们</a>
+                        <a class="list-group-item" href="#3">3.联系方式</a>
+                    </div>
+                </div>
+                <div class="col-md-9 about">
+                    <a name="1"></a>
+                    <h3>机构介绍</h3>
+                    <p>机构简介主要是各种社会机构为介绍自己的工作性质、业务范围、组织构成以及其他有关情况而编写的说明介绍文书。作用是使公众社会对其有一定程度的了解，并在需要时可以循着一定的渠道与之发生联系。与说明书相比，简介类文字的功利性并不明显，主要在于树立公关形象。机构简介的内容很简单，主要是写清机构全称、经济性质、领导机构、经营方向、发展历史、市场前景等几项；要写好简介，其要诀在后三点上：经营方向要写出自己的特色，发展历史要平中见奇，市场前景要对人能产生吸引力。</p>
+                    <a name="2"></a>
+                    <h3>加入我们</h3>
+                    <p>为此，虎嗅编辑过去两年多里风里来雨里去，晨晨昏昏。但是，还不够。远远不够。图森破。除了人肉驱动，我们还能玩儿点别的么？为此，我们准备找更多的入伙，如果你愿意跟我们这么一个“目前”规模仍不大的团队一起创造点儿什么，经历一家注定将要走远路的公司难能可贵的初创期，那么，赶快加入我们吧。</p>
+                    <a name="3"></a>
+                    <h3>联系方式</h3>
+                    <p>地址：安徽省合肥市</p>
+                    <p>Tel：010-8888888</p>
+                    <p>邮编：230000</p>
+                    <p>传真：010-88886666</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <p>企业培训 | 合作事宜 | 版权投诉</p>
+            <p>copyright©小李制作|皖ICP 备000008 号</p>
+        </div>
+    </footer>
+    <script>
+        //设置自动播放
+        $("#mycarousel").carousel({
+            interval:1500,
+            pause:"hover"
+        });
+/*        //设置垂直居中
+        $(function(){
+//            当你刷新的时候获取高度并赋值给line-height
+            var $height = $('.carousel-control').height() + "px";
+            $(".carousel-control").css("line-height",$height);
+            //当窗体变换的时候获取值并赋值给line-height
+           $(window).resize(function(){
+               var $height = $('.carousel-control').eq(0).height() + "px"||
+                             $('.carousel-control').eq(1).height() + "px"||
+                             $('.carousel-control').eq(2).height() + "px";
+               $(".carousel-control").css("line-height",$height);
+           });
+        });*/
+        //设置文字垂直居中
+        $(window).load(function(){
+            $(".text").eq(0).css("margin-top",($('.img').eq(0).height() - $('.text').eq(0).height()) / 2 + "px");
+        });
+        $(window).resize(function(){
+            $(".text").eq(0).css("margin-top",($('.img').eq(0).height() - $('.text').eq(0).height()) / 2 + "px");
+        });
+        $(window).load(function(){
+            $(".text").eq(1).css("margin-top",($('.img').eq(1).height() - $('.text').eq(1).height()) / 2 + "px");
+        });
+        $(window).resize(function(){
+            $(".text").eq(1).css("margin-top",($('.img').eq(1).height() - $('.text').eq(1).height()) / 2 + "px");
+        });
+    </script>
+</body>
+</html>

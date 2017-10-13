@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>项目实战</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a  href="" class="navbar-brand logo"><img src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="glyphicon glyphicon-list"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li>
+                    <li><a href="information.html"><span class="glyphicon glyphicon-list"></span>&nbsp;资讯</a></li>
+                    <li class="active"><a href="case.html"><span class="glyphicon glyphicon-fire"></span>&nbsp;案例</a></li>
+                    <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="hgroup">
+                <h2>案例</h2>
+                <h4>和各大明星企业有着紧密合作 ……</h4>
+            </div>
+        </div>
+    </div>
+    <div id="case">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <!--class="thumbnail" 会自动带有响应式-->
+                    <div class="thumbnail">
+                        <img src="../img/hz1.png" alt="">
+                        <div class="caption">
+                            <h4>渠道伙伴专区</h4>
+                            <p>营销资料下载授权函验证</p>
+                            <p>CSP一站式作业平台</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="../img/hz2.png" alt="">
+                        <div class="caption">
+                            <h4>联盟专区</h4>
+                            <p>Accenture</p>
+                            <p>SAP 产业联盟</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="../img/hz3.png" alt="">
+                        <div class="caption">
+                            <h4>解决方案伙伴专区</h4>
+                            <p>认证解决方案发布解决方案</p>
+                            <p>开发者社区OpenLab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="../img/hz4.png" alt="">
+                        <div class="caption">
+                            <h4>中国合作伙伴大学</h4>
+                            <p>综合学院解决方案学院</p>
+                            <p>服务学院商学院</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="../img/hz4.png" alt="">
+                        <div class="caption">
+                            <h4>中国合作伙伴大学</h4>
+                            <p>综合学院解决方案学院</p>
+                            <p>服务学院商学院</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="../img/hz3.png" alt="">
+                        <div class="caption">
+                            <h4>解决方案伙伴专区</h4>
+                            <p>认证解决方案发布解决方案</p>
+                            <p>开发者社区OpenLab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <!--class="thumbnail" 会自动带有响应式-->
+                    <div class="thumbnail">
+                        <img src="../img/hz1.png" alt="">
+                        <div class="caption">
+                            <h4>渠道伙伴专区</h4>
+                            <p>营销资料下载授权函验证</p>
+                            <p>CSP一站式作业平台</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="../img/hz2.png" alt="">
+                        <div class="caption">
+                            <h4>联盟专区</h4>
+                            <p>Accenture</p>
+                            <p>SAP 产业联盟</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <p>企业培训 | 合作事宜 | 版权投诉</p>
+            <p>copyright©小李制作|皖ICP 备000008 号</p>
+        </div>
+    </footer>
+    <script>
+        //设置自动播放
+        $("#mycarousel").carousel({
+            interval:1500,
+            pause:"hover"
+        });
+/*        //设置垂直居中
+        $(function(){
+//            当你刷新的时候获取高度并赋值给line-height
+            var $height = $('.carousel-control').height() + "px";
+            $(".carousel-control").css("line-height",$height);
+            //当窗体变换的时候获取值并赋值给line-height
+           $(window).resize(function(){
+               var $height = $('.carousel-control').eq(0).height() + "px"||
+                             $('.carousel-control').eq(1).height() + "px"||
+                             $('.carousel-control').eq(2).height() + "px";
+               $(".carousel-control").css("line-height",$height);
+           });
+        });*/
+        //设置文字垂直居中
+        $(window).load(function(){
+            $(".text").eq(0).css("margin-top",($('.img').eq(0).height() - $('.text').eq(0).height()) / 2 + "px");
+        });
+        $(window).resize(function(){
+            $(".text").eq(0).css("margin-top",($('.img').eq(0).height() - $('.text').eq(0).height()) / 2 + "px");
+        });
+        $(window).load(function(){
+            $(".text").eq(1).css("margin-top",($('.img').eq(1).height() - $('.text').eq(1).height()) / 2 + "px");
+        });
+        $(window).resize(function(){
+            $(".text").eq(1).css("margin-top",($('.img').eq(1).height() - $('.text').eq(1).height()) / 2 + "px");
+        });
+    </script>
+</body>
+</html>
